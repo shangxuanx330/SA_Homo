@@ -11,7 +11,7 @@ All datasets used in this paper are available at the following Hugging Face repo
 👉 **[SA_Homo Dataset Download](https://huggingface.co/datasets/ckkkk333000/SA_Homo)**
 
 2. Directory Structure
-After downloading and extracting the datasets, please arrange them in the `datasets` folder according to the following structure to ensure the code runs correctly:
+After downloading the datasets, please put them in the `datasets` folder like:
 
 ```text
 datasets/
