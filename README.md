@@ -11,7 +11,7 @@ Detailed sources of the original datasets are as follows:
 
 1. **HMSA**
    - This is the dataset contributed by our paper. 
-   - **Note**: Currently,  the **validation part** is provided here. The **training part** will be released in subsequent updates.
+   - **Note**: The **validation part** is provided here. The **training part** will be released in subsequent updates.
      
 2. **MSCOCO (2014)**
    - The complete MSCOCO 2014 can be download from Official Website: [https://cocodataset.org/#download](https://cocodataset.org/#download).
@@ -21,7 +21,7 @@ Detailed sources of the original datasets are as follows:
    
 4. **DroneVehicle**
    - Original dataset source: [VisDrone/DroneVehicle](https://github.com/VisDrone/DroneVehicle)
-   - **Note**: This paper utilizes the processed version produced by **GFNet**.
+   - This paper utilizes the processed version produced by **GFNet**.
    - Data Preparation Reference: [GFNet (KN-Zhang)](https://github.com/KN-Zhang/GFNet)
 
 5. **RGB-NIR**
