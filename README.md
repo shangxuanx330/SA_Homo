@@ -41,7 +41,21 @@ Detailed sources of the original datasets are as follows:
 5. **RGB-NIR**
    - The complete RGB-NIR multimodal scene dataset can be download form repository: [Multimodal_Feature_Evaluation](https://github.com/ACuOoOoO/Multimodal_Feature_Evaluation).
      
-
-
 ---
 *If you use these datasets, please adhere to the license agreements of the original dataset authors and cite the corresponding original literature in your papers.*
+
+
+## 📂 Pre-trained Models
+
+The main pre-trained models are available at the following Hugging Face repository:
+👉 **[SA_Homo Dataset Download](https://huggingface.co/ckkkk333000/SA_Homo)**
+
+if you do not want to change the inference scripts provided, please place the downloaded checkpoint files into the `ckpts` folder according to the following structure:
+```text
+ckpts/
+├── coco/
+├── dronevehicle/
+├── googleearth/
+├── googlemap/
+├── hmsa/
+└── rgb_nir/
