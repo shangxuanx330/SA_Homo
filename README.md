@@ -23,7 +23,7 @@ Detailed sources and descriptions of the original datasets are as follows:
 
 3. **DroneVehicle**
    - Original dataset source: [VisDrone/DroneVehicle](https://github.com/VisDrone/DroneVehicle)
-   - **Note**: This paper utilizes the pre-processed version produced by **GFNet**.
+   - **Note**: This paper utilizes the processed version produced by **GFNet**.
    - Data Preparation Reference: [GFNet (KN-Zhang)](https://github.com/KN-Zhang/GFNet)
 
 4. **RGB-NIR**
