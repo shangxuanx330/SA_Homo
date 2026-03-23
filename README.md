@@ -8,7 +8,7 @@ This repository provides the official implementation of SA-Homo, including the i
 All datasets used in this paper are available at the following Hugging Face repository:
 👉 **[SA_Homo Dataset Download](https://huggingface.co/datasets/ckkkk333000/SA_Homo)**
 
-After downloading the datasets, please put them in the `datasets` folder like:
+After downloading the validation datasets, please put them in the `datasets` folder like:
 
 ```text
 datasets/
@@ -22,8 +22,7 @@ datasets/
 Detailed sources of the original datasets are as follows:
 
 1. **HMSA**
-   - This is the dataset contributed by our paper. 
-   - **Note**: The **validation part** is provided here. The **training part** will be released in subsequent updates.
+   - This is the dataset contributed by our paper，the **validation part** is provided here.
      
 2. **MSCOCO (2014)**
    - The complete MSCOCO 2014 can be download from Official Website: [https://cocodataset.org/#download](https://cocodataset.org/#download).
