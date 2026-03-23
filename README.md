@@ -21,9 +21,8 @@ Detailed sources of the original datasets are as follows:
    
 4. **DroneVehicle**
    - Original dataset source: [VisDrone/DroneVehicle](https://github.com/VisDrone/DroneVehicle)
-   - This paper utilizes the processed version produced by **GFNet**.
-   - Data Preparation Reference: [GFNet (KN-Zhang)](https://github.com/KN-Zhang/GFNet)
-
+   - This paper utilizes the processed version produced by GFNet [GFNet (KN-Zhang)](https://github.com/KN-Zhang/GFNet).
+     
 5. **RGB-NIR**
    - The complete RGB-NIR multimodal scene dataset can be download form repository: [Multimodal_Feature_Evaluation](https://github.com/ACuOoOoO/Multimodal_Feature_Evaluation).
      
