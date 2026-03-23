@@ -19,7 +19,7 @@ datasets/
 ├── hmsa_1152x1152/
 └── rgb_nir/
 ```
-Detailed sources of the original datasets are as follows:
+Detailed sources of the datasets are as follows, training part dataset will be upload later:
 
 1. **HMSA**
    - This is the dataset contributed by our paper，the **validation part** is provided now.
