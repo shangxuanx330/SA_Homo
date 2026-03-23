@@ -1,8 +1,6 @@
-# SA-Homo: Scale Adaptive Homography Estimation for Scale Variation Scenarios
+# SA-Homo
 
-The inference code, pre-trained models, and validation datasets are currently being organized and continuously uploaded. All uploads are expected to be completed within one week.
-
-
+This repository provides the official implementation of SA-Homo, including the inference scripts, pre-trained model weights, and the benchmark datasets used. The training code will be relased later.
 
 ## 📂 Datasets
 
