@@ -22,7 +22,7 @@ datasets/
 Detailed sources of the original datasets are as follows:
 
 1. **HMSA**
-   - This is the dataset contributed by our paper，the **validation part** is provided here.
+   - This is the dataset contributed by our paper，the **validation part** is provided now.
      
 2. **MSCOCO (2014)**
    - The complete MSCOCO 2014 can be download from Official Website: [https://cocodataset.org/#download](https://cocodataset.org/#download).
