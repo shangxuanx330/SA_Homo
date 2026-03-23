@@ -11,7 +11,7 @@ Detailed sources of the original datasets are as follows:
 
 1. **HMSA**
    - This is the dataset contributed by our paper. 
-   - **Note**: Currently, only the **validation set** is provided here. The **training set** will be released in subsequent updates.
+   - **Note**: Currently,  the **validation part** is provided here. The **training part** will be released in subsequent updates.
      
 2. **MSCOCO (2014)**
    - The complete MSCOCO 2014 can be download from Official Website: [https://cocodataset.org/#download](https://cocodataset.org/#download).
