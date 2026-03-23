@@ -7,7 +7,7 @@ The inference code, pre-trained models, and validation datasets are currently be
 ## 📂 Datasets
 
 
-All datasets used in this project are available at the following Hugging Face repository:
+All datasets used in this paper are available at the following Hugging Face repository:
 👉 **[SA_Homo Dataset Download](https://huggingface.co/datasets/ckkkk333000/SA_Homo)**
 
 2. Directory Structure
