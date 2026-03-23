@@ -2,10 +2,6 @@
 
 The inference code, pre-trained models, and validation datasets are currently being organized and continuously uploaded. All uploads are expected to be completed within one week.
 
-# SA-Homo: Scale Adaptive Homography Estimation for Scale Variation Scenarios
-
-The inference code, pre-trained models, and validation datasets are currently being organized and continuously uploaded. All uploads are expected to be completed within one week.
-
 ## 📂 Datasets
 
 All datasets used in this project are available at the following Hugging Face repository:
