@@ -29,6 +29,10 @@ Detailed sources and descriptions of the original datasets are as follows:
 4. **RGB-NIR**
    - The complete RGB-NIR multimodal scene dataset.
    - Source Repository: [Multimodal_Feature_Evaluation](https://github.com/ACuOoOoO/Multimodal_Feature_Evaluation)
+  
+. **HMSA**
+   - This is the dataset contributed by our paper. 
+   - **Note**: Currently, only the **validation set** is provided here. The **training set** will be released in subsequent updates.
 
 ---
-*Please adhere to the license agreements of the original dataset authors and cite the corresponding original literature in your academic papers.*
+*If you use these datasets, please adhere to the license agreements of the original dataset authors and cite the corresponding original literature in your papers.*
