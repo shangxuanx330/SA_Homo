@@ -2,10 +2,25 @@
 
 The inference code, pre-trained models, and validation datasets are currently being organized and continuously uploaded. All uploads are expected to be completed within one week.
 
+
+
 ## 📂 Datasets
+
 
 All datasets used in this project are available at the following Hugging Face repository:
 👉 **[SA_Homo Dataset Download](https://huggingface.co/datasets/ckkkk333000/SA_Homo)**
+
+2. Directory Structure
+After downloading and extracting the datasets, please arrange them in the `datasets` folder according to the following structure to ensure the code runs correctly:
+
+```text
+datasets/
+├── coco/
+├── gfnet_dronevehicle/
+├── GoogleEarth/
+├── GoogleMap/
+├── hmsa_1152x1152/
+└── rgb_nir/
 
 Detailed sources of the original datasets are as follows:
 
