@@ -44,7 +44,7 @@ Detailed sources of the datasets are as follows, training part dataset will be u
 ## 📂 Pre-trained Models
 
 The main pre-trained models are available at the following Hugging Face repository:
-👉 **[SA_Homo Dataset Download](https://huggingface.co/ckkkk333000/SA_Homo)**
+👉 **[SA_Homo pre-trained model Download](https://huggingface.co/ckkkk333000/SA_Homo)**
 
 if you do not want to change the inference scripts provided, please place the downloaded checkpoint files into the `ckpts` folder according to the following structure:
 ```text
