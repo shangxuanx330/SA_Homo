@@ -124,7 +124,7 @@ def print_config(config, indent=0):
             logger.info(' ' * indent + f"{key}: {value}")
 
 def load_dataset(args, config):
-    validation_loader,  _ = get_val_dataloder(config,args,'val')
+    validation_loader,  _ = get_val_dataloder(config,args,'test')
     return validation_loader
 
 if __name__ == "__main__":
