@@ -373,7 +373,7 @@ def print_config(config, indent=0):
 
 def load_dataset(args, config):
 
-    validation_loader,  _ = get_val_dataloder(config,args,'val')
+    validation_loader,  _ = get_val_dataloder(config,args,'test')
 
     return validation_loader
     # return validation_loader
