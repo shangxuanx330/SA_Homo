@@ -182,8 +182,8 @@ class HomographyDataset_gfnet(Dataset):
                     imgs1.append(os.path.join(path.replace('target', 'source'), image_name))
                     self.mask.append(os.path.join(path.replace('target', 'mask'), image_name))
                     self.H_stg.append(os.path.join(path.replace('target', 'H_s2t'), image_name.replace('jpg', 'json')))
-        elif split == 'val':
-            self.input_resize = transforms.Compose([
+        elif self.split == 'test':
+            self.input_resize = transforms.Compose  ([
                 transforms.Resize(size=input_resolution, interpolation=3),
                 transforms.ToTensor()
                 ])                      
@@ -273,7 +273,7 @@ class HomographyDataset_gfnet(Dataset):
             if self.normalize:
                 img0, img1 = self.input_norm(img0), self.input_norm(img1)
                   
-        elif self.split == 'val':
+        elif self.split == 'test':
             
             w0_original, h0_original = img0.size
             w1_original, h1_original = img1.size
