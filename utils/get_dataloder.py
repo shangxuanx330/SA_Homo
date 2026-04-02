@@ -15,8 +15,6 @@ from dataset.homography_data_gfnet import HomographyDataset_gfnet
 def get_val_dataloder(config,args,split='val'):
     val_transform_fn  = get_val_transform_fn(config)
     
-    if not split=='val':
-        split='test' 
     if config["dataset_augmentations"]['dataset_type'] in ['GoogleMap']:
         dataset_val = GoogleMapAndEarth_dynamic_return_homo(
             transform=val_transform_fn,
@@ -85,7 +83,6 @@ def get_val_dataloder(config,args,split='val'):
         drop_last=True,
     )
 
-    # 如果使用分布式训练，也返回sampler引用以便设置epoch
     if is_distributed:
         return  validation_loader,  val_sampler
     else:
@@ -143,11 +140,10 @@ def get_train_dataloder(config,args,split='train'):
             template_patch_size = config["training_template_img_size"],
         )
 
-    # 设置分布式采样器
     is_distributed = config.get("distributed", {}).get("enabled", False)
     if is_distributed:
         train_sampler = DistributedSampler(dataset_train, shuffle=True)
-        shuffle = False  # 使用sampler时不能shuffle
+        shuffle = False 
     else:
         train_sampler = None
         shuffle = True
@@ -163,21 +159,8 @@ def get_train_dataloder(config,args,split='train'):
         drop_last=True
     )
 
-    # 如果使用分布式训练，也返回sampler引用以便设置epoch
     if is_distributed:
         return training_loader, train_sampler
     else:
         return training_loader, None
 
-def get_dataloader(config,args):
-
-    is_distributed = config.get("distributed", {}).get("enabled", False)
-
-    training_loader,train_sampler = get_train_dataloder(config,args,split='train')
-    validation_loader,val_sampler = get_val_dataloder(config,args,split='val')
-
-    # 如果使用分布式训练，也返回sampler引用以便设置epoch
-    if is_distributed:
-        return training_loader, validation_loader, train_sampler, val_sampler
-    else:
-        return training_loader, validation_loader, None, None
