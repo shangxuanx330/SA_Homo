@@ -255,8 +255,7 @@ class SA_Homo_Homography_Dataset(Dataset):
     def _load_data(self):
         """Load data from multiple datasets"""
         for dataset_idx, dataset_root in enumerate(self.root_list):
-            if self.split == 'val' and self.is_val_static:
-                # Validation mode with static data - load from anno.txt
+            if self.split == 'test' and self.is_val_static:
                 dataset_name = os.path.basename(os.path.normpath(dataset_root))
                 val_folder = os.path.join(dataset_root, self.val_dataset_folder_name)
                 anno_file = os.path.join(val_folder, 'anno.txt')
@@ -304,7 +303,6 @@ class SA_Homo_Homography_Dataset(Dataset):
                         'dataset_name': enhanced_dataset_name
                     })
             else:
-                # Training data - original logic
                 template_folder = os.path.join(dataset_root, self.split, 'template')
                 search_folder = os.path.join(dataset_root, self.split, 'search')
                 
@@ -428,8 +426,8 @@ class SA_Homo_Homography_Dataset(Dataset):
         sample = self.samples[i]
         dataset_name = sample['dataset_name']
         
-        if self.split == 'val' and self.is_val_static:
-            # 验证模式的处理保持不变，但优化图像读取
+        if self.split == 'test' and self.is_val_static:
+            
             return self._get_validation_item(sample, dataset_name)
         
         h_crop, w_crop, scale_diff = self.get_random_crop_size()
